@@ -14,11 +14,11 @@ $(document).ready(function() {
       result = "C# (see sharp)";
     } else if (userDifficulty === "med-diff"){
       result = "Go";
-    } else if (userCreativityLevel === "least"){
+    } else if (userCreativityLevel === "mid"){
       result = "Python";
-    } else if (userProjectSize === "mid"){
+    } else if (userProjectSize === "med"){
       result = "JavaScript";
-    } else if (userDreamJob === "twitch"){
+    } else if (userDreamJob === "nasa"){
       result = "Ruby";
     } else if (userWorkLife === "pto"){
       result = "Rust";
@@ -26,7 +26,7 @@ $(document).ready(function() {
       result = "Swift";
     }
 
-    $("#results").text(result);
+    $("#result").text(result);
     $("#quiz-results").show();
   });
 });

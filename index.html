@@ -4,7 +4,8 @@
     <title>Programming Language Suggestor</title>
     <link href="cs/styles.css" rel="stylesheet" type="text/css">
     <link href="cs/bootstrap.css" rel="stylesheet" type ="text/css">
-    <script src="js/script.js"></script>
+    <script src="jss/scripts.js"></script>
+    <script src="jss/jquery-3.6.0.js"></script>
   </head>
   <body class="bg">
     <div class = "container">
@@ -28,10 +29,12 @@
             A mid-level/ mid-size company
           </label>
           <br>
+          <!--
           <label>
             <input type="radio" name="work-type" value="small-biz">
             A start-up/ small business
           </label>
+          -->
           <br>
           <br>
           <h2>How difficult of a first language would you like to learn?</h2>
@@ -46,10 +49,12 @@
             Mid-level difficulty
           </label>
           <br>
+          <!--
           <label>
             <input type="radio" name="difficulty" value="easy">
-            easiest
+            Easiest
           </label>
+          -->
           <br>
           <br>
           <h2>How much creativity would you like to be able to utilize on the job?</h2>
@@ -64,13 +69,15 @@
             Mildly creative
           </label>
           <br>
+          <!--
           <label>
             <input type="radio" name="creativity-level" value="least">
             Least creative
           </label>
+          -->
           <br>
           <br>
-          <h2>What project sizes would you like to take on</h2>
+          <h2>What project sizes would you like to take on?</h2>
           <br>
           <label>
             <input type="radio" name="project-size" value="large-proj" checked>
@@ -78,15 +85,17 @@
           </label>
           <br>
           <label>
-            <input type="radio" name="med-proj" value="mid">
+            <input type="radio" name="med-proj" value="med">
             Making medium projects, with limited maintiance needed.
           </label>
           <br>
+          <!--
           <label>
             <input type="radio" name="project-size" value="small-proj">
             Small projects, with varying amount of maintiance needed.
           </label>
           <br>
+          -->
           <br>
           <h2>What company would excite you the most to work at?</h2>
           <br>
@@ -100,10 +109,12 @@
             Microsoft
           </label>
           <br>
+          <!--
           <label>
             <input type="radio" name="dream-job" value="twitch">
             Twitch
           </label>
+          -->
           <br>
           <br>
           <h2>What is more important to you?</h2>
@@ -118,12 +129,14 @@
             A retirement plan
           </label>
           <br>
+          <!--
           <label>
             <input type="radio" name="work-life" value="promotions">
             Ability to climb the promotional ladder quickly
           </label>
           <br>
           <br>
+          -->
           <button type="submit" class="btn" id="submit-btn">Submit questions for quiz results!</button>
           <br>
       </div>
@@ -131,7 +144,7 @@
     <br>
     <br>
   <div id="quiz-results">
-    <h2>Beep! Boop! Beep! Your suggested first langue to learn is <span id="results"></span>! If you want to learn more about this language, and other languages you can go to <a href="languages.html">languages.html</a>.</h2>
+    <h2>Beep! Boop! Beep! Your suggested first langue to learn is <span id="result"></span>! If you want to learn more about this language, and other languages you can go to <a href="languages.html">languages.html</a>.</h2>
   </div>
   </div>
   </body>
