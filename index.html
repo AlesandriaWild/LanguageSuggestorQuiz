@@ -13,10 +13,76 @@
       </p>
     <form id="quiz-questions">
       <div class="radio">
-        <p>
-        
-        </p>
+        <h2>What type of company would you like to work at?</h2>
+          <label>
+            <input type="radio" name="work-type" value="big-biz" checked>
+            Large company/ Corporate work
+          </label>
+          <label>
+            <input type="radio" name="work-type" value="med-biz">
+            A mid-level/ mid-size company
+          </label>
+          <label>
+            <input type="radio" name="work-type" value="small-biz">
+            A start-up/ small business
+          </label>
+          <h2>How difficult of a first language would you like to learn?</h2>
+          <label>
+            <input type="radio" name="difficulty" value="very" checked>
+            Very difficult
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="med-diff">
+            Mid-level difficulty
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="easy">
+            easiest
+          </label>
+          <h2>How much creativity would you like to be able to utilize on the job?</h2>
+          <label>
+            <input type="radio" name="creativity-level" value="most" checked>
+            Very creative
+          </label>
+          <label>
+            <input type="radio" name="creativity-level" value="mid">
+            Mildly creative
+          </label>
+          <label>
+            <input type="radio" name="creativity-level" value="least">
+            Least creative
+          </label>
+          <h2>What project sizes would you like to take on</h2>
+          <label>
+            <input type="radio" name="project-size" value="large-proj" checked>
+            Making and maintaining large projects.
+          </label>
+          <label>
+            <input type="radio" name="med-proj" value="mid">
+            Making medium projects, with limited maintiance needed.
+          </label>
+          <label>
+            <input type="radio" name="project-size" value="small-proj">
+            Small projects, with varying amount of maintiance needed.
+          </label>
+          <h2>What company would excite you the most to work at?</h2>
+          <label>
+            <input type="radio" name="dream-job" value="nasa" checked>
+            NASA
+          </label>
+          <label>
+            <input type="radio" name="dream-job" value="micro">
+            Microsoft
+          </label>
+          <label>
+            <input type="radio" name="dream-job" value="twitch">
+            Twitch
+          </label>
+          <button type="submit" class="btn" id="submit-btn">Submit questions for quiz results!</button>
       </div>
     </form>
+  <div id="quiz-results">
+    <p>Beep! Boop! Beep! Your suggested first langue to learn is <span id="result"></span>! If you want to learn more about this language, and other languages you can go to <a href="languages.html">languages.html</a>.</p>
+  </div>
   </body>
 </html>
