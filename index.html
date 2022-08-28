@@ -1,88 +1,141 @@
 <!DOCTYPE html>
 <html lan="eng-US">
   <head>
+    <title>Programming Language Suggestor</title>
     <link href="cs/styles.css" rel="stylesheet" type="text/css">
     <link href="cs/bootstrap.css" rel="stylesheet" type ="text/css">
     <script src="js/script.js"></script>
   </head>
   <body class="bg">
+    <div class = "container">
       <h1>Programming Language Suggestion Quiz:</h1>
       <img src="https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200" alt="Different programming languages listed." width="20%" class="float-l">
       <p>
       Have you decided that you want to change careers? Are you wanting to start a job in a evergrowing industry? Feeling lost about what language to learn first? Then this is the quiz for you! This quiz will help you learn what languages would best suit your learning needs going forward.
       </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <form id="quiz-questions">
       <div class="radio">
         <h2>What type of company would you like to work at?</h2>
+          <br>
           <label>
             <input type="radio" name="work-type" value="big-biz" checked>
             Large company/ Corporate work
           </label>
+          <br>
           <label>
             <input type="radio" name="work-type" value="med-biz">
             A mid-level/ mid-size company
           </label>
+          <br>
           <label>
             <input type="radio" name="work-type" value="small-biz">
             A start-up/ small business
           </label>
+          <br>
+          <br>
           <h2>How difficult of a first language would you like to learn?</h2>
+          <br>
           <label>
             <input type="radio" name="difficulty" value="very" checked>
             Very difficult
           </label>
+          <br>
           <label>
             <input type="radio" name="difficulty" value="med-diff">
             Mid-level difficulty
           </label>
+          <br>
           <label>
             <input type="radio" name="difficulty" value="easy">
             easiest
           </label>
+          <br>
+          <br>
           <h2>How much creativity would you like to be able to utilize on the job?</h2>
+          <br>
           <label>
             <input type="radio" name="creativity-level" value="most" checked>
             Very creative
           </label>
+          <br>
           <label>
             <input type="radio" name="creativity-level" value="mid">
             Mildly creative
           </label>
+          <br>
           <label>
             <input type="radio" name="creativity-level" value="least">
             Least creative
           </label>
+          <br>
+          <br>
           <h2>What project sizes would you like to take on</h2>
+          <br>
           <label>
             <input type="radio" name="project-size" value="large-proj" checked>
             Making and maintaining large projects.
           </label>
+          <br>
           <label>
             <input type="radio" name="med-proj" value="mid">
             Making medium projects, with limited maintiance needed.
           </label>
+          <br>
           <label>
             <input type="radio" name="project-size" value="small-proj">
             Small projects, with varying amount of maintiance needed.
           </label>
+          <br>
+          <br>
           <h2>What company would excite you the most to work at?</h2>
+          <br>
           <label>
             <input type="radio" name="dream-job" value="nasa" checked>
             NASA
           </label>
+          <br>
           <label>
             <input type="radio" name="dream-job" value="micro">
             Microsoft
           </label>
+          <br>
           <label>
             <input type="radio" name="dream-job" value="twitch">
             Twitch
           </label>
-          <button type="submit" class="btn" id="submit-btn">Submit questions for quiz results!</button>
+          <br>
+          <br>
+          <h2>What is more important to you?</h2>
+          <br>
+          <label>
+            <input type="radio" name="work-life" value="pto" checked>
+            Paid time Off
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="work-life" value="401k">
+            A retirement plan
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="work-life" value="promotions">
+            Ability to climb the promotional ladder quickly
+          </label>
+          <br>
+          <br>
+          <button type="submit" class="btn" id="submit-btn" color="light-gray">Submit questions for quiz results!</button>
+          <br>
       </div>
     </form>
+    <br>
+    <br>
   <div id="quiz-results">
-    <p>Beep! Boop! Beep! Your suggested first langue to learn is <span id="result"></span>! If you want to learn more about this language, and other languages you can go to <a href="languages.html">languages.html</a>.</p>
+    <h2>Beep! Boop! Beep! Your suggested first langue to learn is <span id="results"></span>! If you want to learn more about this language, and other languages you can go to <a href="languages.html">languages.html</a>.</h2>
   </div>
   </body>
 </html>

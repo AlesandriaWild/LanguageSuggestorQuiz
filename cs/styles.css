@@ -7,12 +7,17 @@
   min-width: 992px !important;
 }
 
-.bg {
-  background-color: rgb(19, 17, 17);
-  color:lightseagreen;
-}
-
 .float-l{
   float: left;
   padding: 7px;
+}
+
+#submit-btn{
+  background-color:lightseagreen;
+  color: rgb(19, 17, 17);
+}
+
+.bg{
+  background-color: rgb(19, 17, 17);
+  color:lightseagreen;
 }
