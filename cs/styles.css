@@ -21,3 +21,8 @@
   background-color: rgb(19, 17, 17);
   color:lightseagreen;
 }
+
+.initialism {
+  font-size: 10vw;
+  text-transform: uppercase;
+}
