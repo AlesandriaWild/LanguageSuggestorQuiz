@@ -26,3 +26,8 @@
   font-size: 10vw;
   text-transform: uppercase;
 }
+
+.hidden{
+  display: none;
+}
+

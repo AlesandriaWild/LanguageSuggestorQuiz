@@ -14,11 +14,11 @@ $(document).ready(function() {
       result = "C# (see sharp)";
     } else if (userDifficulty === "med-diff"){
       result = "Go";
-    } else if (userCreativityLevel === "mid"){
+    } else if (userCreativityLevel === "least"){
       result = "Python";
     } else if (userProjectSize === "med"){
       result = "JavaScript";
-    } else if (userDreamJob === "nasa"){
+    } else if (userDreamJob === "twitch"){
       result = "Ruby";
     } else if (userWorkLife === "pto"){
       result = "Rust";
