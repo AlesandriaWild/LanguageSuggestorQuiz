@@ -7,11 +7,6 @@
   min-width: 992px !important;
 }
 
-.float-l{
-  float: left;
-  padding: 7px;
-}
-
 #submit-btn{
   background-color:lightseagreen;
   color: rgb(19, 17, 17);
@@ -22,12 +17,6 @@
   color:lightseagreen;
 }
 
-.initialism {
-  font-size: 10vw;
-  text-transform: uppercase;
-}
-
 .hidden{
   display: none;
 }
-
