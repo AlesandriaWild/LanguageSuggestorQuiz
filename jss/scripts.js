@@ -1,32 +1,28 @@
-$(document).ready(function() {
+function hideResults(){
+  document.getElementById("see-sharp").setAttribute("class", "hidden");
+  document.getElementById("ruby").setAttribute("class", "hidden");
+  document.getElementById("python").setAttribute("class", "hidden");
+}
 
-  $("form#quiz-questions").submit(function(e){
-    e.preventDefault();
-    const userWorkType=$("#input:radio[name=work-type]:checked").val();
-    const userDifficulty=$("#input:radio[name=difficulty]:checked").val();
-    const userCreativityLevel=$("#input:radio[name=creativity-level]:checked").val();
-    const userProjectSize=$("#input:radio[name=project-size]:checked").val();
-    const userDreamJob=$("#input:radio[name=dream-job]:checked").val();
-    const userWorkLife=$("#input:radio[name=work-life]:checked").val();
+function submitAnswers(e){
+  e.preventDefault();
+  hideResults();
+  const input1 = document.querySelector("input[name='work-type']:checked").value
+  const input2 = document.querySelector("input[name='difficulty']:checked").value
+  const input3 = document.querySelector("input[name='creativity-level']:checked").value
+  const input4 = document.querySelector("input[name='project-size']:checked").value
+  const input5 = document.querySelector("input[name='dream-job']:checked").value
 
-    let result;
-    if (userWorkType === "big-biz"){
-      result = "C# (see sharp)";
-    } else if (userDifficulty === "med-diff"){
-      result = "Go";
-    } else if (userCreativityLevel === "least"){
-      result = "Python";
-    } else if (userProjectSize === "med"){
-      result = "JavaScript";
-    } else if (userDreamJob === "twitch"){
-      result = "Ruby";
-    } else if (userWorkLife === "pto"){
-      result = "Rust";
-    } else {
-      result = "Swift";
-    }
+  if (input1 === 'big-biz' && (input2 === "very" || input5 === "nasa")) {
+    document.getElementById("python").removeAttribute("class");
+  } else if (input1 === 'med-biz' && (input3 === "most" || input4 === "med")){
+    document.getElementById("ruby").removeAttribute("class");
+  } else {
+    document.getElementById("see-sharp").removeAttribute("class");
+  }
+}
 
-    $("#result").text(result);
-    $("#quiz-results").show();
-  });
+window.addEventListener("load", function() {
+  const form = document.getElementById("quiz-questions");
+  form.addEventListener("submit", submitAnswers)
 });
